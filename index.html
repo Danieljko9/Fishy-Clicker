@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwater Fish Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-board">
+            Fish Caught: <span id="score">0</span>
+        </div>
+        <button class="click-button" onclick="catchFish()">
+            <img src="my-fish.png" alt="Fish" class="fish-image">
+        </button>
+        <div class="upgrades">
+            <div class="upgrade" onclick="buyUpgrade('net')">
+                <span>Better Net (+1 fish/click)</span>
+                <span>Cost: <span id="net-cost">10</span> fish</span>
+            </div>
+            <div class="upgrade" onclick="buyUpgrade('boat')">
+                <span>Fishing Boat (+5 fish/click)</span>
+                <span>Cost: <span id="boat-cost">50</span> fish</span>
+            </div>
+            <div class="upgrade" onclick="buyUpgrade('trawler')">
+                <span>Fishing Trawler (+10 fish/click)</span>
+                <span>Cost: <span id="trawler-cost">100</span> fish</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
